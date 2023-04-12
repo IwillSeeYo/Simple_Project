@@ -1,12 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ViewScore : MonoBehaviour
+public sealed class ViewScore : MonoBehaviour
 {
+    private const string AnimationScale = "ScoreScale";
+
     [SerializeField] private TMP_Text _score;
     [SerializeField] ScoreData _scoreData;
+
+    private Animator _animator;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     private void OnEnable()
     {
@@ -22,5 +29,6 @@ public class ViewScore : MonoBehaviour
     private void OnMoneyChanget(int score)
     {
         _score.text = score.ToString();
+        _animator.Play(AnimationScale);
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 [RequireComponent(typeof(Animator))]
 
-public class Player : MonoBehaviour
+public sealed class Player : MonoBehaviour
 {
     private const string TakeAnimation = "Take";
 

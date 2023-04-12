@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour, IMovable
+public sealed class Movement : MonoBehaviour, IMovable
 {
     private readonly float _speed;
     private readonly Transform _transform;

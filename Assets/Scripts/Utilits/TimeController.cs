@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TimeController : MonoBehaviour
+public sealed class TimeController : MonoBehaviour
 {
     public void Pause()
     {

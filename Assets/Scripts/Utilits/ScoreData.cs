@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ScoreData : MonoBehaviour
+public sealed class ScoreData : MonoBehaviour
 {
     private int _score;
 

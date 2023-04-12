@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 [RequireComponent(typeof(Movement))]
 [RequireComponent(typeof(Destruction))]

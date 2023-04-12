@@ -1,11 +1,10 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Networking.Types;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameOverScreen : MonoBehaviour
+public sealed class GameOverScreen : MonoBehaviour
 {
     [SerializeField] private Player _player;
     [SerializeField] private ScoreData _scoreData;

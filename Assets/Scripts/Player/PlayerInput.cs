@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+public sealed class PlayerInput : MonoBehaviour
 {
     private float _deceleration = 30f;
 

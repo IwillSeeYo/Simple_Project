@@ -2,4 +2,4 @@ using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
 
-public class Enemy : Item { }
+public sealed class Enemy : Item { }

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public sealed class Spawner : MonoBehaviour
 {
     [SerializeField] private ItemData _itemData;
     [SerializeField] private float _minSpawnDelay;

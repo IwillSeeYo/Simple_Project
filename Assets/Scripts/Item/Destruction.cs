@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Destruction : MonoBehaviour, IDestroyable
+public sealed class Destruction : MonoBehaviour, IDestroyable
 {
     private readonly Transform _transform;
     private readonly float _destroyHeight;
